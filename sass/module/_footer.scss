@@ -1,0 +1,104 @@
+.section-footer{
+    padding: 60px 0 160px;
+
+    .section-content.half{
+        display: inline-block;
+        width: 50%;
+        float: left;
+        padding: 20px 0;
+        &:first-child{
+          /*background-color: brown;*/
+        }
+        &:nth-child(2){
+          /*background-color: #106ea5;*/
+        }
+    }
+
+    .menu{
+        width: 100%;
+        text-align: right;
+        &.main{
+            margin-bottom: 20px;
+            .menu-item{
+                font-weight: 400
+            }
+        }
+        &.other{
+            margin-bottom: 50px;
+            .menu-item{
+                font-weight: 200;
+                text-transform: capitalize;
+            }
+        }
+        
+    }
+    .contacts{
+        text-transform: uppercase;
+        color: $lightgrey;
+        font-size: 14px;
+
+        .contact-item {
+            margin-bottom: 5px;
+            a {
+                color: $lightgrey;
+                text-decoration: none;
+            }
+            .contact-label {
+                color: $grey;
+                margin-right: 14px;
+            }
+        }
+    }
+    .copyright{
+        padding-top: 50px;
+        p {
+            font-size: 14px;
+            color: #4f4f4f;
+            margin: 0;
+        }
+    } 
+}
+
+@media (max-width : 990px){
+
+    .section-footer{
+        padding: 60px 0 160px;
+
+        .shell{
+            display: inline-flex;
+            flex-direction: column-reverse;
+        }
+    
+        .section-content.half{
+            display: inline-block;
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            &:first-child{
+              /*background-color: brown;*/
+            }
+            &:nth-child(2){
+              /*background-color: #106ea5;*/
+            }
+        }
+
+        .menu{
+            width: 100%;
+            text-align: center;
+            &.main{
+                margin-bottom: 20px;
+                .menu-item{
+                    font-weight: 400
+                }
+            }
+            &.other{
+                margin-bottom: 50px;
+                .menu-item{
+                    font-weight: 200
+                }
+            }
+            
+        }
+    }
+}
+

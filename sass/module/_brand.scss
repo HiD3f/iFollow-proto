@@ -1,0 +1,61 @@
+.brand {
+  display: inline-block;
+  position: absolute;
+  color:  $white;
+  line-height: 100px;
+  left : 60px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color,0.3s;
+  b{
+    font-size: 38px;
+    font-weight: 700;
+  }
+  em{
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  &.colored{
+    b{
+      color: $primaire;
+    }
+    em{
+      color: $secondaire;
+    }
+  }
+  &:hover,&:active,&:focus{
+    color: $lightgrey;
+  }
+}
+
+.floating{
+  .brand{
+    line-height: 70px;
+    left : 20px;
+    color: $primaire;
+    &:hover,&:active,&:focus{
+      color: $secondaire;
+    }
+    b{
+      font-size: 28px;
+    }
+  }
+}
+
+
+@media (max-width: 1594px) {
+  .brand{
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .brand{
+    line-height: 64px;
+    left: 20px;
+    b{
+      font-size: 30px;
+    }
+  }
+}

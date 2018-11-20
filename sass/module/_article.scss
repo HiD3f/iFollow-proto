@@ -1,0 +1,165 @@
+
+.pageContainer{
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid $lightgrey;
+    padding-top: 30px;
+}
+
+article {
+    display: inline-block;
+    width: calc(100% - 440px);
+    float: left;
+    margin-bottom: 160px;
+
+    .header{
+        margin-bottom: 32px;
+        .title{
+            margin-bottom: 4px;
+        }
+    
+        .date {
+            opacity: 0.6;
+        }
+    }
+
+    p{
+        font-weight: 300;
+
+        &.articleIntro{
+            font-weight: 400;
+        }
+    }
+
+    q {
+        font-style: italic;
+        font-size: 18px;
+        text-align: center;
+        display: inline-block;
+        padding: 0 10%;
+    }
+
+    .imgContainer, .videoContainer {
+        margin: 30px 0;
+    }
+    
+    .imgContainer {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    
+        img{
+            display: inline-block;
+            
+            &.large{
+                width: 100%;
+            }
+    
+            &.medium{
+                width: 50%;
+            }
+        }
+    
+    }
+    
+    .videoContainer{
+        display: block;
+        margin: 30px auto;
+    
+        &.large {
+            width: 100%;
+        }
+        &.medium {
+            width: 50%;
+        }
+    }
+    .videoWrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+    }
+
+} 
+
+.CTA-column {
+    display: inline-block;
+    width: 390px;
+    margin-left: 50px;
+
+    .newsletter{
+        p{
+            text-align: left;
+            border-bottom: 1px solid $mediumgrey;
+            padding-bottom: 26px;
+        }
+
+        form{
+            margin-top: 20px;
+
+            input[type=submit] {
+                width: initial;
+                margin-left: 10px;
+            }
+        
+            input[type="email"] {
+                width: calc(100% - 148px);
+                padding: 19px 28px;
+                border: 1px solid #cccccc;
+                background-color: #e8e8e8;
+            }
+        }
+    }
+
+}
+
+.articlePage{
+    .section-cta{
+        display: none;
+    }
+}
+
+@media (max-width : 1166px){
+    .CTA-column{
+        display: none;
+    }
+
+    article {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .articlePage{
+        .section-cta{
+            display: inline-block;
+        }
+    }
+}
+
+@media (max-width : 760px){
+
+    article{
+        .imgContainer {    
+            img{
+                &.medium{
+                    width: 100%;
+                }
+            }
+        }
+        
+        .videoContainer{
+            &.medium {
+                width: 100%;
+            }
+        }
+    }
+    
+}
+

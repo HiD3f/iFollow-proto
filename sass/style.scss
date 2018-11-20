@@ -1,0 +1,72 @@
+/*//// PARTIALS /////*/
+@import "base";
+@import "mixins";
+@import "module/section";
+@import "module/background";
+@import "module/brand";
+@import "module/navbar";
+@import "module/buttons";
+@import "module/mosaic";
+@import "module/clientlist";
+@import "module/articleteaser";
+@import "module/calltoaction";
+@import "module/socials";
+@import "module/newsletter";
+@import "module/footer";
+@import "module/intro";
+@import "module/controlButtons";
+@import "module/burgermenu";
+@import "module/separator";
+@import "module/story";
+@import "module/team";
+@import "module/blog";
+@import "module/article";
+@import "module/form";
+
+.section-intro{
+  height: 100vh;
+  padding-top: 110px;
+}
+
+
+.section-about{
+  padding: 100px 0 80px;
+  .section-content{
+    max-width: 960px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  h1{
+    font-weight: 400;
+    font-size: 37px;
+  }
+  p{
+    opacity: 0.5;
+    font-size: 26px;
+    font-weight: 300;
+  }
+}
+
+.mission{
+  h1{
+    font-weight: 600;
+    font-size: 44px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .section-content-text{
+    font-size: 16px!important;
+  }
+  .section-about {
+    padding: 40px 0 80px;
+    h1 {
+      font-weight: 400;
+      font-size: 25px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}

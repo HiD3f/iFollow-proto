@@ -1,0 +1,137 @@
+.btn-visit{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  transition: color,0.3s;
+  &:hover,&:active,&:focus{
+    color: $primaire;
+  }
+  border-bottom: 1px solid;
+  &.c-white{
+    border-bottom-color: rgba(255,255,255,0.5);
+  }
+  &.c-black{
+    border-bottom-color: rgba(0,0,0,0.5);
+  }
+}
+
+a[type=button], button , input[type=button], input[type=submit], input[type=reset]{
+  border:none;
+  outline:none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  &.nakedBtn{
+    margin: 14px 12px;
+    font-size: 22px;
+    font-weight: 300;
+    transition: background-color, color, 0.3s;
+    em {
+      font-style: normal;
+      font-size: 28px;
+      margin-left: 5px;
+      position: relative;
+    }
+    &.black{
+      color : $black;
+      &:hover{
+        color : $grey;
+      }
+    }
+    &.white{
+      color : $white;
+      &:hover{
+        color : $lightgrey;
+      }
+    }
+  }
+  &.smallBtn{
+    padding: 16px 32px;
+    font-size: 22px;
+    transition: background-color, color, 0.3s;
+  }
+  &.mediumBtn{
+    padding: 16px 44px;
+    font-size: 22px;
+    transition: background-color, color, 0.3s;
+  }
+  &.largeBtn{
+    padding: 24px 44px;
+    font-size: 22px;
+    transition: background-color, color, 0.3s;
+  }
+  &.primeColor {
+    background-color: $primaire;
+    color: $white;
+    &:hover,&:active,&:focus{
+      background-color: $grey;
+      color : $white;
+    }
+  }
+  &.accentColor {
+    background-color: $primaire;
+    color: white;
+    &:hover,&:active,&:focus{
+      background-color: $black;
+    }
+  }
+  &.black-trans{
+    background-color: $black-trans;
+    color: $white;
+    &:hover,&:active,&:focus{
+      background-color: $black;
+      color : $lightgrey;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  a[type=button], button , input[type=button], input[type=submit], input[type=reset]{
+
+    &.nakedBtn{
+      margin: 14px 12px;
+      font-size: 18px;
+      em {
+        font-size: 24px;
+      }
+    }
+    &.mediumBtn{
+      padding: 14px 40px;
+      font-size: 18px;
+      transition: background-color, color, 0.3s;
+    }
+    &.largeBtn{
+      padding: 20px 40px;
+      font-size: 18px;
+      transition: background-color, color, 0.3s;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  a[type=button], button , input[type=button], input[type=submit], input[type=reset]{
+
+    &.nakedBtn{
+      margin: 14px 12px;
+      font-size: 18px;
+      em {
+        font-size: 24px;
+      }
+    }
+    &.mediumBtn{
+      padding: 14px 40px;
+      font-size: 18px;
+      transition: background-color, color, 0.3s;
+    }
+    &.largeBtn{
+      padding: 20px 30px;
+      width: 80%;
+      max-width: 260px;
+      margin-bottom: 10px;
+      font-size: 18px;
+      transition: background-color, color, 0.3s;
+    }
+  }
+}
+

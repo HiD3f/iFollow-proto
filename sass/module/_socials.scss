@@ -1,0 +1,74 @@
+.socials{
+  display: inline-block;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.social-item{
+  opacity: 0.7;
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  background-position: center center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  margin: 5px;
+  transition: background-image 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+  &:hover{
+    animation: bg-size 0.3s;
+    opacity: 1;
+  }
+
+  @keyframes bg-size{
+    0%{
+      background-size : 80%;
+    }
+    50%{
+      background-size : 40%;
+    }
+    100%{
+      background-size : 80%;
+    }
+  }
+  
+  &:first-child{
+    margin-left: 0; 
+  }
+  
+  &.facebook{
+    background-image:url(../images/social/fb_white.png);
+    &:hover{
+      background-image:url(../images/social/fb_color.png)
+    }
+  }
+
+  &.twitter{
+    background-image:url(../images/social/tw_white.png);
+    &:hover{
+      background-image:url(../images/social/tw_color.png)
+    }
+  }
+
+  &.linkedin{
+    background-image:url(../images/social/li_white.png);
+    &:hover{
+      background-image:url(../images/social/li_color.png)
+    }
+  }
+
+  &.youtube{
+    background-image:url(../images/social/yt_white.png);
+    &:hover{
+      background-image:url(../images/social/yt_color.png)
+    }
+  }
+  
+  &.instagram{
+    background-image:url(../images/social/ig_white.png);
+    &:hover{
+      background-image:url(../images/social/ig_color.png)
+    }
+  }
+
+}

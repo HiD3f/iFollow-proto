@@ -1,0 +1,14 @@
+.calltoaction{
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+
+  .container{
+    display: inline-block;
+
+    a[type=button]{
+      display: block;
+    }
+  }
+}

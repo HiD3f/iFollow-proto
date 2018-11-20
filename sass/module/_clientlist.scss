@@ -1,0 +1,12 @@
+.clientlist{
+  display: inline-block;
+  width: 100%;
+
+  .clientlist-item{
+    display: inline-block;
+    width: 20%;
+    height: 20vw;
+    background-color: red;
+    margin: 0;
+  }
+}

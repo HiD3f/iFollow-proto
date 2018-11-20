@@ -1,0 +1,73 @@
+$primeFont : 'Oswald', sans-serif;
+$black  : #0e0e0e;
+$black-trans : rgba(0,0,0,0.5);
+$white : #fcfcfc;
+$primaire : #376195;
+$secondaire : #ff3a39;
+$grey : #4f4f4f;
+$mediumgrey : #cacaca;
+$lightgrey : #dedede;
+
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: $primeFont;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: 400;
+}
+
+.bg-black-trans{
+  background: rgba(0, 0, 0, 0.30);
+}
+
+.bg-black-trans1{
+  background: rgba(0, 0, 0, 0.10);
+}
+
+.bg-black{
+  background-color: #0e0e0e;
+}
+
+.bg-white{
+  background-color: #fafafa;
+}
+
+.bg-rwhite{
+  background-color: #fff;
+}
+
+.bg-lgrey{
+  background-color: #ebebeb;
+}
+
+.bg-dgrey{
+  background-color: #393939;
+}
+
+.bg-dblue{
+  background-color: #132b3d;
+}
+
+.c-white{
+  color: $white;
+}
+
+.c-black{
+  color:$black;
+}
+
+.al-center{
+  text-align: center;
+  justify-content: center;
+}

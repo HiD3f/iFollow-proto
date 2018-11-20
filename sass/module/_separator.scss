@@ -1,0 +1,10 @@
+.separator {
+    display: block;
+    border-top: 1px solid $grey;
+    &.top{
+        margin-bottom: 80px;
+    }
+    &.bottom{
+        margin-top: 180px;
+    }
+}
